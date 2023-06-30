@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.titulos.Titulacao;
+import org.example.titulos.Titulo;
 
 public class RegistroDePontuacao {
 
@@ -33,7 +33,7 @@ public class RegistroDePontuacao {
         registro
                 .append("Pontuação da Prova de Títulos: \n");
 
-        for (Titulacao titulo : candidato.getTitulos()) {
+        for (Titulo titulo : candidato.getTitulos()) {
             addTitulo(registro, titulo);
         }
 
@@ -43,7 +43,7 @@ public class RegistroDePontuacao {
                 .append("\n");
     }
 
-    private static void addTitulo(StringBuilder registro, Titulacao titulo) {
+    private static void addTitulo(StringBuilder registro, Titulo titulo) {
         registro
                 .append("\tTítulo: ")
                 .append(titulo)

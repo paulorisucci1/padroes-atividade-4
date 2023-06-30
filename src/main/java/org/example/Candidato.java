@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.titulos.Titulacao;
+import org.example.titulos.Titulo;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,13 +13,13 @@ public class Candidato {
 
     private Integer pontuacaoProvaDesempenho;
 
-    private Set<Titulacao> titulos;
+    private Set<Titulo> titulos;
 
     public Candidato() {
         this.titulos = new HashSet<>();
     }
 
-    public Candidato(String nome, String RG, Set<Titulacao> titulos) {
+    public Candidato(String nome, String RG, Set<Titulo> titulos) {
         this.nome = nome;
         this.RG = RG;
         this.titulos = titulos;
@@ -49,16 +49,16 @@ public class Candidato {
         this.pontuacaoProvaDesempenho = pontuacaoProvaDesempenho;
     }
 
-    public Set<Titulacao> getTitulos() {
+    public Set<Titulo> getTitulos() {
         return new HashSet<>(titulos);
     }
 
-    public void addTitulo(Titulacao titulacao) {
-        this.titulos.add(titulacao);
+    public void addTitulo(Titulo titulo) {
+        this.titulos.add(titulo);
     }
 
-    public void removeTitulo(Titulacao titulacao) {
-        this.titulos.remove(titulacao);
+    public void removeTitulo(Titulo titulo) {
+        this.titulos.remove(titulo);
     }
 
     public Integer getPontuacaoTotal() {
@@ -67,8 +67,8 @@ public class Candidato {
 
     public Integer getPontuacaoTitulos() {
         Integer pontuacaoTotal = 0;
-        for(Titulacao titulacao: this.titulos) {
-            pontuacaoTotal += titulacao.getPontuacao();
+        for(Titulo titulo : this.titulos) {
+            pontuacaoTotal += titulo.getPontuacao();
         }
         return pontuacaoTotal;
     }

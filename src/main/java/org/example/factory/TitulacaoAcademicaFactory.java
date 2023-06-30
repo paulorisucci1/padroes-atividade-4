@@ -1,24 +1,23 @@
 package org.example.factory;
 
-import org.example.titulos.Titulacao;
-import org.example.titulos.titulacao_academica.TitulacaoAcademica;
-import org.example.titulos.titulacao_academica.TituloDoutor;
-import org.example.titulos.titulacao_academica.TituloEspecialista;
-import org.example.titulos.titulacao_academica.TituloMestre;
+import org.example.titulos.titulacao_academica.TituloAcademico;
+import org.example.titulos.titulacao_academica.Doutor;
+import org.example.titulos.titulacao_academica.Especialista;
+import org.example.titulos.titulacao_academica.Mestre;
 
 import java.util.Objects;
 
 public class TitulacaoAcademicaFactory {
 
-    public static TitulacaoAcademica getTitulacaoAcademica(String titulacaoDesejada) {
+    public static TituloAcademico getTitulacaoAcademica(String titulacaoDesejada) {
         titulacaoDesejada = titulacaoDesejada.toUpperCase();
 
         if(Objects.equals("DOUTOR", titulacaoDesejada)) {
-            return new TituloDoutor();
+            return new Doutor();
         } else if(Objects.equals("MESTRE", titulacaoDesejada)) {
-            return new TituloMestre();
+            return new Mestre();
         } else {
-            return new TituloEspecialista();
+            return new Especialista();
         }
     }
 }

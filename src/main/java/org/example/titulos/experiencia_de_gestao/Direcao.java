@@ -1,7 +1,5 @@
 package org.example.titulos.experiencia_de_gestao;
 
-import org.example.titulos.Titulacao;
-
 public class Direcao extends ExperienciaDeGestao {
 
     public Direcao(Integer semestres) {

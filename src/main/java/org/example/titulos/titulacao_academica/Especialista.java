@@ -1,13 +1,13 @@
 package org.example.titulos.titulacao_academica;
 
-public class TituloMestre implements TitulacaoAcademica {
+public class Especialista implements TituloAcademico {
     @Override
     public Integer getPontuacao() {
-        return 18;
+        return 10;
     }
 
     @Override
     public String toString() {
-        return "Cargo: Mestre";
+        return "Cargo: Especialista";
     }
 }

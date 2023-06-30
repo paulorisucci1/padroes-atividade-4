@@ -1,8 +1,8 @@
 package org.example.titulos.experiencia_de_ensino;
 
-import org.example.titulos.Titulacao;
+import org.example.titulos.Titulo;
 
-public abstract class ExperienciaDeEnsino implements Titulacao {
+public abstract class ExperienciaDeEnsino implements Titulo {
     protected Integer semestres;
 
     protected Integer pontosPorSemestre;

@@ -1,6 +1,6 @@
 package org.example.titulos;
 
-public interface Titulacao {
+public interface Titulo {
 
     Integer getPontuacao();
 }
