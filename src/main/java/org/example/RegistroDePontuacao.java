@@ -38,7 +38,7 @@ public class RegistroDePontuacao {
         }
 
         registro
-                .append("Pontuação total da prova de Títulos:")
+                .append("Pontuação total da prova de Títulos: ")
                 .append(candidato.getPontuacaoTitulos())
                 .append("\n");
     }
